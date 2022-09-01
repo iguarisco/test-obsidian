@@ -1,14 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simulador Interactivo - Desafío 1</title>
-</head>
-<body>
-  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML probando para js</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 
-<script src="./index.js"></script>
-</body>
+    <!-- Fuente sofia  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!-- Fuente audiowide -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <!-- Efecto de fuego -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  </head>
+  <body class="">
+
+    <header class="d-flex justify-content-between">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class=" collapse navbar-collapse" id="navbarScroll">
+            <ul class="col navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 190px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>     
+      
+      <div class="">
+        <a href="./index.html"><h1 class="m-2 "><strong>Obsidian</strong></h1></a>
+      </div>
+      
+
+    </header>
+
+    <main>
+
+      <!-- Carrusel de accesorios con seccion -->
+      <div id="carouselExampleSlidesOnly" class="w-100 carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/collar.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/collar.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/collar.jpg" alt="Third slide">
+          </div>
+        </div>
+      </div>
+
+      <section class=" d-flex justify-content-center align-content-center align-items-center">
+        <h4 class="m-2">ACCESORIOS</h4>
+      </section>
+
+
+      <!-- Carrusel de cuadros con seccion -->
+      <div id="carouselExampleSlidesOnly" class="w-100 carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/collar.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/collar.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/collar.jpg" alt="Third slide">
+          </div>
+        </div>
+      </div>
+
+      <section class=" d-flex justify-content-center align-content-center align-items-center">
+        <h4 class="m-2">CUADROS</h4>
+      </section>
+
+      <!-- Seccion ideas -->
+
+      <div id="carouselExampleSlidesOnly" class="w-100 carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/collar.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/collar.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/collar.jpg" alt="Third slide">
+          </div>
+        </div>
+      </div>
+
+      <section class=" d-flex justify-content-center align-content-center align-items-center">
+        <h4 class="m-2">IDEAS</h4>
+      </section>
+
+      <!-- Seccion diseños personalizados -->
+
+      <div id="carouselExampleSlidesOnly" class="w-100 carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/collar.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/collar.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/collar.jpg" alt="Third slide">
+          </div>
+        </div>
+      </div>
+
+      <section class=" d-flex justify-content-center align-content-center align-items-center">
+        <h4 class="m-2">DISEÑOS PERSONALIZADOS</h4>
+      </section>
+
+    </main>
+    
+    <footer class="d-flex flex-row justify-content-center mt-4">
+      <nav class="" aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="./index.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="./nosotros.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="./productos.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="./contacto.html">4</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
 </html>
+
+<!-- <script src="./index.js"></script> -->

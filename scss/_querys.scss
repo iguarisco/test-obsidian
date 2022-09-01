@@ -1,0 +1,44 @@
+@media only screen and (max-width: 480px){
+    main div {
+        width: 80%;
+    }
+
+    main div div {
+        width: 100%;
+    }
+
+    nav div div ul{
+        width: 100%
+    }
+
+    header div form{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    main div {
+        width: 80%;
+    }
+    main div div {
+        width: 100%;
+    }
+
+    nav div div ul{
+        width: 100%
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    main div {
+        width: 80%;
+    }
+    main div div {
+        width: 100%;
+    }
+
+    nav div div ul{
+        width: 100%
+    }
+}

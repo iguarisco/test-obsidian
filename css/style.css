@@ -1,0 +1,81 @@
+header {
+  background-color: rgba(121, 247, 159, 0.267);
+  padding: 10px;
+  margin: 0px;
+}
+
+header nav {
+  width: 50%;
+}
+header nav .nav-item {
+  font-family: "Audiowide", sans-serif;
+  font-size: 20px;
+}
+header div {
+  display: flex;
+  justify-content: center;
+}
+header div a {
+  text-decoration: none;
+}
+header h1 {
+  color: rgba(3, 112, 36, 0.596);
+  font-family: "Sofia", sans-serif;
+  list-style: none;
+  font-size: 50px;
+}
+
+main section {
+  background-color: rgba(144, 238, 144, 0.438);
+}
+main section h4 {
+  font-weight: 700;
+  color: rgba(3, 112, 36, 0.685);
+  font-family: "Audiowide", sans-serif;
+  text-shadow: 3px 3px 3px #ababab;
+}
+main div .form-select {
+  width: auto;
+}
+main div button {
+  width: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  main div {
+    width: 80%;
+  }
+  main div div {
+    width: 100%;
+  }
+  nav div div ul {
+    width: 100%;
+  }
+  header div form {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main div {
+    width: 80%;
+  }
+  main div div {
+    width: 100%;
+  }
+  nav div div ul {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  main div {
+    width: 80%;
+  }
+  main div div {
+    width: 100%;
+  }
+  nav div div ul {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
