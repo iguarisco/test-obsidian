@@ -75,3 +75,5 @@ metodoDePago()
 
 
 alert("Gracias por la compra!") 
+
+

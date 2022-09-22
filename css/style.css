@@ -25,13 +25,12 @@ header h1 {
   font-size: 50px;
 }
 
-main div input {
-  border-radius: 15px;
-  padding: 10px;
-  margin: 10px;
+main form input {
+  margin-top: 40px;
+  margin: 20px;
 }
-main div button {
-  height: 40px;
+main form button {
+  margin-bottom: 20px;
 }
 main section {
   background-color: rgba(144, 238, 144, 0.438);
@@ -52,6 +51,19 @@ main div button {
   width: auto;
 }
 
+@media only screen and (max-width: 550px) {
+  main form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main form div .form-control {
+    width: 50%;
+  }
+  main form div button {
+    width: 50%;
+  }
+}
 @media only screen and (max-width: 480px) {
   main div {
     width: 80%;
