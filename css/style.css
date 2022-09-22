@@ -25,6 +25,14 @@ header h1 {
   font-size: 50px;
 }
 
+main div input {
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+}
+main div button {
+  height: 40px;
+}
 main section {
   background-color: rgba(144, 238, 144, 0.438);
 }
@@ -33,6 +41,9 @@ main section h4 {
   color: rgba(3, 112, 36, 0.685);
   font-family: "Audiowide", sans-serif;
   text-shadow: 3px 3px 3px #ababab;
+}
+main section a {
+  text-decoration: none;
 }
 main div .form-select {
   width: auto;

@@ -1,5 +1,18 @@
 
 main{
+
+    div{
+
+        input{
+            border-radius: 15px;
+            padding: 10px;
+            margin: 10px;
+
+        }
+        button{
+            height: 40px;
+        }
+    }
     section{
         background-color: rgba(144, 238, 144, 0.438);
 
@@ -8,6 +21,10 @@ main{
             color: rgba(3, 112, 36, 0.685);
             font-family: "Audiowide", sans-serif;
             text-shadow: 3px 3px 3px #ababab;
+            
+        }
+        a{
+            text-decoration: none;
         }
     }
 
