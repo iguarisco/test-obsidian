@@ -49,12 +49,26 @@ main{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
 
     }
 
     main form div .form-control{
         width: 50%;
         
+    }
+
+    main form div button{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 501px){
+    main form div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
     }
 
     main form div button{
