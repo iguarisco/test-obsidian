@@ -1,4 +1,21 @@
-// Doy la bienvenida a la pagina
+
+let usuario;
+let usuarioStorage = localStorage.getItem("usuario")
+
+if(usuarioStorage){
+  usuario = usuarioStorage;
+  let mensaje = `Bienvenido ${usuario}`;
+  alert(mensaje);
+}else{
+  usuario = prompt("Ingrese su nombre");
+  localStorage.setItem("usuario", usuario)
+  alert("Bienvenido por primera vez!")
+}
+
+
+
+
+// // Doy la bienvenida a la pagina
 
 alert("Bienvenido a la tienda de accesorios! Estamos orgullosos que nos tenga en cuenta!")
 alert("A continuación, ingrese la opcion del producto que desea llevar. Para salir, ingrese 0")
@@ -6,14 +23,14 @@ alert("A continuación, ingrese la opcion del producto que desea llevar. Para sa
 // Pido opcion de numero, cantidad de productos y defino el total en 0 
 let seleccionarProductos = Number(prompt( "1- Colgantes $300\n 2- Caravanas $150\n 3- Pinturas / Dibujos $500\n"))
 let seleccionarCantidad;
-let total = 0;
+ let total = 0;
 
 
 const cantidad = (cant, precio) => {
   return cant * precio
 }
 
-// Mientras que el usuario seleccione seleccione productos, la funcion ira sumando los precios 
+// // Mientras que el usuario seleccione seleccione productos, la funcion ira sumando los precios 
 
 while (seleccionarProductos != 0) {
   switch (seleccionarProductos) {
@@ -29,13 +46,10 @@ while (seleccionarProductos != 0) {
       seleccionarCantidad = Number(prompt("Le gustaron los dibujos?, Indique la cantidad por favor!"))
       total += cantidad(seleccionarCantidad, 500)
     break;
-    // case 4:
-    //   seleccionarCantidad = Number(prompt("Le gustaron los Camperones deportivo?, Indique la cantidad por favor!"))
-    //   total += cantidad(seleccionarCantidad, 6000)
-    // break;
 
-    default:
-      break;
+  default:
+
+break;
   }
   seleccionarProductos = Number(prompt( "1- Colgantes $300\n 2- Caravanas $150\n 3- Pinturas / Dibujos $500\n"))
 }
@@ -55,6 +69,8 @@ const envio = () => {
     }
 }
 
+
+
 // De acuerdo al metodo de pago, hay descuento o no 
 
 const metodoDePago = () => {
@@ -69,11 +85,24 @@ const metodoDePago = () => {
 
   
 }
-
-envio()
+vio()
 metodoDePago()
 
 
 alert("Gracias por la compra!") 
 
+
+const productos = [
+  {id: 1, producto: "Colgantes", precio: 300},
+  {id: 2, producto: "Caravanas", precio: 150},
+  {id: 3, producto: "Dibujos", precio: 500},
+]
+
+const guardarStorage = (clave, valor) => {localStorage.setItem(clave, valor)};
+
+for(const producto of productos){
+  guardarStorage(producto.id,JSON.stringify(producto) )
+}
+
+localStorage.setItem("carrito", JSON.stringify(productos))
 
